@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Марина Козырева](https://up.htmlacademy.ru/adaptive-individual/2/user/403849).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Картавый] (https://htmlacademy.ru/profile/artem_k).
 
 ---
 
