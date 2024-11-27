@@ -1,0 +1,10 @@
+.subscribe-form__email {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.subscribe-form__email::placeholder {
+  color: $basic-text-color;
+}

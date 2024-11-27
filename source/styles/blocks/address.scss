@@ -1,0 +1,17 @@
+.address {
+  background-color: $secondary-bg-color;
+}
+
+.address__collab {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.address__text {
+  line-height: 20px;
+  font-style: normal;
+  color: $basic-text-color;
+}

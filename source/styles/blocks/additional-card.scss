@@ -1,0 +1,19 @@
+.additional-card__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $secondary-title-color;
+}
+
+.additional-card__quantity {
+  line-height: 14px;
+  color: $basic-text-color;
+}
+
+.additional-card__price {
+  font-weight: 400;
+  line-height: 14px;
+  color: $basic-text-color;
+}

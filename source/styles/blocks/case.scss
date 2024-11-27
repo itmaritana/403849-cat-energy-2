@@ -1,0 +1,23 @@
+.case {
+  background-color: $secondary-bg-color;
+}
+
+.case__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-titile-color;
+}
+
+.case__description {
+  color: $basic-text-color;
+}
+
+.case__cost {
+  font-family: $secondary-font;
+  line-height: 20px;
+  text-align: center;
+  color: $basic-titile-color;
+  text-transform: uppercase;
+}

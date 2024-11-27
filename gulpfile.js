@@ -1,3 +1,5 @@
+import csso from 'postcss-csso';
+
 import { readFileSync, rmSync } from 'node:fs';
 
 import gulp from 'gulp';
@@ -67,7 +69,8 @@ export function processStyles () {
         lightningcssOptions: {
           minify: !isDevelopment,
         },
-      })
+      }),
+      csso()
     ]))
     .pipe(dest(`${PATH_TO_DIST}styles`, { sourcemaps: isDevelopment }))
     .pipe(server.stream());
