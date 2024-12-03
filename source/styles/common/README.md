@@ -9,7 +9,7 @@ _fonts.scss_
 
 _variables.scss_
 ```scss
-$color-basis: #000000;
+$color-basis: $basic-titile-color;
 $color-accent: #ffffff;
 ```
 

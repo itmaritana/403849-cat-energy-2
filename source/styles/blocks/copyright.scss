@@ -1,0 +1,27 @@
+.copyright {
+  &::after {
+    width: 27px;
+    height: 34px;
+    display: block;
+    content: "";
+    mask-image: url("../../icons/stack.svg#logo-html-academy");
+    mask-size: 27px 34px;
+    background-color: #666666;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      background-color: $basic-bg-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+

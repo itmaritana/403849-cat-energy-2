@@ -1,0 +1,14 @@
+.main-nav__toggle {
+  @include clear-input;
+  width: 24px;
+  height: 24px;
+  mask-image: url("../../icons/stack.svg#burger");
+  mask-size: 24px 24px;
+  mask-repeat: no-repeat;
+  background-color: #000000;
+}
+
+.main-nav__toggle--close {
+  mask-image: url("../../icons/stack.svg#close");
+  mask-size: 18px 18px;
+}

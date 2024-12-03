@@ -1,0 +1,29 @@
+.program {
+  background-color: $secondary-bg-color;
+}
+
+.program__title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: $basic-title-color;
+  text-transform: uppercase;
+}
+
+.program__description {
+  color: $basic-text-color;
+}
+
+.program__button {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $basic-title-color;
+  background-image: url("../../icons/stack.svg#icon-arrow");
+  background-size: 32px 10px;
+  background-repeat: no-repeat;
+}

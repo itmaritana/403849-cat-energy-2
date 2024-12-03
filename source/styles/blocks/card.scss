@@ -1,0 +1,14 @@
+.card__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $secondary-title-color;
+  text-transform: uppercase;
+}
+
+.card__features {
+  font-size: 12px;
+  line-height: 16px;
+  color: $basic-text-color;
+}

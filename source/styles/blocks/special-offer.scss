@@ -1,0 +1,20 @@
+.special-offer {
+  background-color: $basic-bg-color;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#special-offer-icon");
+    background-size: 78px 80px;
+    background-repeat: no-repeat;
+  }
+}
+
+.special-offer__text {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}

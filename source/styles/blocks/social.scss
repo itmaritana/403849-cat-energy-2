@@ -1,0 +1,29 @@
+.social__link {
+  background-color: #666666;
+  width: 28px;
+  height: 22px;
+  mask-position: center;
+  display: block;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-bg-color;
+  }
+
+  &:active {
+    background-color: $basic-bg-color;
+    opacity: 0.3;
+  }
+
+  &--vkontakte {
+    mask-image: url("../../icons/stack.svg#social-vkontakte");
+  }
+
+  &--youtube {
+    mask-image: url("../../icons/stack.svg#social-youtube");
+  }
+
+  &--telegram {
+    mask-image: url("../../icons/stack.svg#social-telegram");
+  }
+}
