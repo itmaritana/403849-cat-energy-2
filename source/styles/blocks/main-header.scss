@@ -1,10 +1,10 @@
 .main-header {
   display: flex;
   flex-direction: column;
+}
 
-  &__logo-container {
-    display: flex;
-  }
+.main-header__logo-container {
+  display: flex;
 }
 
 .main-header__container {
