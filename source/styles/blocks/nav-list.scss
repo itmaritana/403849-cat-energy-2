@@ -1,0 +1,17 @@
+.nav-list {
+  @include clear-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 436px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
+
+  &__link {
+    color: $basic-title-color;
+  }
+}

@@ -6,6 +6,10 @@
   mask-size: 24px 24px;
   mask-repeat: no-repeat;
   background-color: #000000;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__toggle--close {

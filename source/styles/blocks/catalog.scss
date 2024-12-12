@@ -4,4 +4,32 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic-title-color;
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.catalog__list {
+  @include clear-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+  }
+}
+
+.catalog__item {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 300px;
+  }
 }

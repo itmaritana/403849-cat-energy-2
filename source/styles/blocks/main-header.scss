@@ -1,0 +1,18 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+
+  &__logo-container {
+    display: flex;
+  }
+}
+
+.main-header__container {
+  padding: 13px 21px 14px 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 34px 0 30px;
+  }
+}

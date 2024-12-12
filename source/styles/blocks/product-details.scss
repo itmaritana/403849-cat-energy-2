@@ -4,4 +4,61 @@
   line-height: 40px;
   font-weight: 400;
   color: $basic-title-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.product-details__list {
+  @include clear-list;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    gap: 37px 0;
+    justify-content: space-between;
+    padding-right: 79px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+  }
+}
+
+.product-details__item {
+  &--benefit {
+    @media (min-width: $tablet-width) {
+      width: 230px;
+    }
+  }
+
+  &--easy {
+    @media (min-width: $tablet-width) {
+      width: 246px;
+    }
+  }
+
+  &--instruction {
+    @media (min-width: $tablet-width) {
+      width: 247px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 248px;
+    }
+  }
+
+  &--effect {
+    @media (min-width: $tablet-width) {
+      width: 249px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 250px;
+    }
+  }
 }
