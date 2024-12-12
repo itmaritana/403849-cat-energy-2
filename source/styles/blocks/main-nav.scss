@@ -10,9 +10,9 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
-}
 
-.main-nav__toggle--close {
-  mask-image: url("../../icons/stack.svg#close");
-  mask-size: 18px 18px;
+  &--close {
+    mask-image: url("../../icons/stack.svg#close");
+    mask-size: 18px 18px;
+  }
 }

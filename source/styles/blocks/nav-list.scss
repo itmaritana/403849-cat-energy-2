@@ -10,8 +10,8 @@
   @media (min-width: $desktop-width) {
     width: 475px;
   }
+}
 
-  &__link {
-    color: $basic-title-color;
-  }
+.nav-list__link {
+  color: $basic-title-color;
 }
