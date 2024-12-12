@@ -27,3 +27,8 @@
     mask-image: url("../../icons/stack.svg#social-telegram");
   }
 }
+
+.social__list {
+  @include clear-list;
+  display: flex;
+}

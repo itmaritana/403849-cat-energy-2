@@ -1,0 +1,9 @@
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+  }
+}

@@ -12,3 +12,14 @@
   line-height: 16px;
   color: $basic-text-color;
 }
+
+.card__container {
+  display: flex;
+  margin-bottom: 17px;
+}
+
+.card__button {
+  display: block;
+  width: 280px;
+  margin-bottom: 25px;
+}

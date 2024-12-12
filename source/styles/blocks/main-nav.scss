@@ -6,9 +6,13 @@
   mask-size: 24px 24px;
   mask-repeat: no-repeat;
   background-color: #000000;
-}
 
-.main-nav__toggle--close {
-  mask-image: url("../../icons/stack.svg#close");
-  mask-size: 18px 18px;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &--close {
+    mask-image: url("../../icons/stack.svg#close");
+    mask-size: 18px 18px;
+  }
 }

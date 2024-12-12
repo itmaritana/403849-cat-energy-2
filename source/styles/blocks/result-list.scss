@@ -1,3 +1,7 @@
+.result-list {
+  display: flex;
+}
+
 .result-list__number {
   font-family: $secondary-font;
   font-size: 24px;
@@ -5,10 +9,20 @@
   text-align: center;
   color: $basic-title-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .result-list__description {
+  font-size: 12px;
   line-height: 14px;
   text-align: center;
   color: $basic-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
 }

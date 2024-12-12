@@ -1,3 +1,24 @@
+.detail {
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    gap: 31px;
+  }
+}
+
 .detail__description {
   color: $basic-text-color;
+  margin: 0;
+}
+
+.detail__image {
+  min-width: 60px;
+  max-width: 60px;
+  height: 60px;
+  background-color: $basic-bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

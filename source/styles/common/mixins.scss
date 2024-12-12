@@ -21,3 +21,9 @@
   appearance: none;
   outline: none;
 }
+
+@mixin clear-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
