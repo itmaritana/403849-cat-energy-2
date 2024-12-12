@@ -1,0 +1,19 @@
+.additional-products__list {
+  @include clear-list;
+
+  @media (min-width: $desktop-width) {
+    width: 895px;
+    margin-right: auto;
+  }
+}
+
+.additional-products__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.additional-products__title {
+  width: 100%;
+}

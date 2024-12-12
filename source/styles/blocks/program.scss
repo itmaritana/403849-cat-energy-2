@@ -9,10 +9,20 @@
   font-weight: 400;
   color: $basic-title-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .program__description {
   color: $basic-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .program__button {
@@ -26,4 +36,9 @@
   background-image: url("../../icons/stack.svg#icon-arrow");
   background-size: 32px 10px;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

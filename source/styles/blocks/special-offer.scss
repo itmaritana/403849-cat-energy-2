@@ -17,4 +17,8 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+  }
 }

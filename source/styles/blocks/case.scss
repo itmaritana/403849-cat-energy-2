@@ -8,16 +8,59 @@
   font-size: 36px;
   line-height: 40px;
   color: $basic-title-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .case__description {
   color: $basic-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .case__cost {
   font-family: $secondary-font;
   line-height: 20px;
-  text-align: center;
   color: $basic-title-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.case__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.case__cost-container {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 63px;
+  }
+}
+
+.case__result-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

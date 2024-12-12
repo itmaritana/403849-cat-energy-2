@@ -1,17 +1,32 @@
-.address {
-  background-color: $secondary-bg-color;
-}
-
 .address__collab {
+  width: 140px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__text {
+  width: 140px;
   line-height: 20px;
   font-style: normal;
   color: $basic-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.address__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
