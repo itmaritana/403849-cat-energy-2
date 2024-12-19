@@ -10,12 +10,10 @@
   mask-repeat: no-repeat;
   background-color: #000000;
   cursor: pointer;
-  display: none;
 
   &--close {
     mask-image: url("../../icons/stack.svg#close");
     mask-size: 18px 18px;
-    display: block;
   }
 
   @media (min-width: $tablet-width) {
@@ -32,14 +30,7 @@
   }
 }
 
-.main-nav--close .main-nav__toggle {
-  @media (max-width: calc($tablet-width - 1px)) {
-    display: block;
-  }
-}
-
-.main-nav--close .main-nav__list,
-.main-nav--close .main-nav__toggle--close {
+.main-nav--close .main-nav__list {
   @media (max-width: calc($tablet-width - 1px)) {
     display: none;
   }

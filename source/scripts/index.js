@@ -6,9 +6,9 @@ navMain.classList.remove('main-nav--nojs');
 navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('main-nav--close')) {
     navMain.classList.remove('main-nav--close');
-    console.log('open');
+    navToggle.classList.add('main-nav__toggle--close');
   } else {
     navMain.classList.add('main-nav--close');
-    console.log('close');
+    navToggle.classList.remove('main-nav__toggle--close');
   }
 });

@@ -40,6 +40,10 @@
 
 .main-header__logo {
   margin-right: -33px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .main-header__logo--text {
