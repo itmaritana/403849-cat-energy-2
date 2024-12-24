@@ -1,14 +1,48 @@
+.hero {
+  background-image: url("../../images/background-index-mobile@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+}
+
+.hero__img {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 225px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: none;
+    left: 557px;
+    top: 0;
+  }
+}
+
 .hero__title {
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   color: #ffffff;
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     color: $basic-title-color;
     font-size: 60px;
-    line-height: 60px;
+    line-height: 1;
+    text-align: left;
+    margin-bottom: 40px;
   }
 }
 
@@ -17,30 +51,48 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     color: $basic-title-color;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 1;
+    text-align: left;
   }
-}
-
-.hero__slogan-container {
-  background-color: $basic-bg-color;
 }
 
 .hero__container {
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    position: relative;
+    padding-bottom: 542px;
+    padding-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 200px;
+    padding-bottom: 184px;
+    padding-top: 50px;
   }
 }
 
 .hero__button {
+  display: block;
+
   @media (min-width: $tablet-width) {
     width: 242px;
+    position: relative;
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
     width: 244px;
   }
+}
+
+.hero__slogan-container {
+  padding-top: 27px;
 }

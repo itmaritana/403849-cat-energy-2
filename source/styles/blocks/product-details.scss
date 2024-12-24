@@ -1,13 +1,33 @@
+.product-details {
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 114px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+}
+
 .product-details__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
   color: $basic-title-color;
+  margin: 0;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 60px;
+    line-height: 1;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 83px;
   }
 }
 
@@ -19,17 +39,35 @@
 
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
-    gap: 37px 0;
+    gap: 132px 0;
     justify-content: space-between;
     padding-right: 79px;
+    counter-reset: list-number 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-right: 0;
   }
 }
 
 .product-details__item {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    counter-increment: list-number 1;
+
+    &::after {
+      content: counter(list-number);
+      font-family: $secondary-font;
+      font-size: 280px;
+      line-height: 1;
+      color: $secondary-bg-color;
+      position: absolute;
+      top: -40px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
   &--benefit {
     @media (min-width: $tablet-width) {
       width: 230px;
@@ -44,7 +82,7 @@
 
   &--instruction {
     @media (min-width: $tablet-width) {
-      width: 247px;
+      width: 238px;
     }
 
     @media (min-width: $desktop-width) {

@@ -1,9 +1,56 @@
+.comparison {
+  position: relative;
+}
+
 .comparison__button {
   @include clear-input;
-  mask-image: url("../../icons/stack.svg#comparison-button");
-  mask-size: 40px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   width: 40px;
   height: 40px;
+  color: #666666;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    width: 4px;
+    height: 257px;
+    background-color: #666666;
+    border-radius: 2px;
+
+    @media (min-width: $tablet-width) {
+      height: 512px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $basic-bg-color;
+
+    &::before {
+      background-color: $basic-bg-color;
+    }
+  }
+
+  &:active {
+    color: rgba(94, 170, 47, 0.6);
+
+
+    &::before {
+      background-color: rgba(94, 170, 47, 0.6);
+    }
+  }
+}
+
+.comparison__image {
+  display: block;
+  margin: 0 auto;
 }
 
 .comparison__image--after {

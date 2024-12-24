@@ -1,11 +1,13 @@
 .result-list {
   display: flex;
+  gap: 32px;
+  justify-content: space-evenly;
 }
 
 .result-list__number {
   font-family: $secondary-font;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
   text-align: center;
   color: $basic-title-color;
   text-transform: uppercase;
@@ -17,12 +19,50 @@
 }
 
 .result-list__description {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  min-width: 77px;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1;
   text-align: center;
   color: $basic-text-color;
+  background-color: $tertiary-bg-color;
+
 
   @media (min-width: $tablet-width) {
+    top: 100%;
     font-size: 14px;
+    line-height: 1;
+    background-color: #ffffff;
+    width: 70%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $secondary-bg-color;
+  }
+}
+
+.result-list__description--second-description {
+  @media (min-width: $tablet-width) {
+    width: 90%;
+  }
+}
+
+.result-list__wrapper {
+  position: relative;
+  min-width: 124px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  margin-bottom: 34px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
   }
 }

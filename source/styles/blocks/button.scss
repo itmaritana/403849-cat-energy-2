@@ -9,6 +9,21 @@
   color: #ffffff;
   padding: 10px;
 
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+  }
+
   &--more {
     font-family: $secondary-font;
     font-size: 16px;
@@ -17,5 +32,15 @@
     text-transform: uppercase;
     background-color: $secondary-bg-color;
     color: $basic-text-color;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: $basic-text-color;
+    }
   }
 }

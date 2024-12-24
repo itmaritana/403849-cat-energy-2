@@ -29,12 +29,12 @@
         </a>
       </div>
 
-      <nav class="main-nav main-nav--nojs">
+      <nav class="main-nav main-nav--close main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть и закрыть меню</span>
         </button>
 
-        <ul class="nav-list">
+        <ul class="main-nav__list nav-list">
           <li class="nav-list__item">
             <a class="nav-list__link nav-list__link--catalog" href="index.html">Главная</a>
           </li>
@@ -49,7 +49,7 @@
     </div>
   </header>
 
-  <main class="main">
+  <main class="main main--catalog">
     <article class="catalog">
       <div class="catalog__container container">
         <h1 class="catalog__title">Каталог продукции</h1>
@@ -59,26 +59,28 @@
               <picture>
                 <source type="image/webp" width="161" height="172" media="(min-width: 1440px)" srcset="images/card-pro-chicken-500g-tablet@1x.webp 1x, images/card-pro-chicken-500g-tablet@2x.webp 2x">
                 <source type="image/webp" width="161" height="172" media="(min-width: 768px)" srcset="images/card-pro-chicken-500g-tablet@1x.webp 1x, images/card-pro-chicken-500g-tablet@2x.webp 2x">
-                <source type="image/webp" width="84" height="100" srcset="images/card-pro-chicken-500g-mobile@1x.webp 1x, images/card-pro-chicken-500g-mobile@2x.webp 2x">
+                <source type="image/webp" width="68" height="86" srcset="images/card-pro-chicken-500g-mobile@1x.webp 1x, images/card-pro-chicken-500g-mobile@2x.webp 2x">
                 <source type="image/png" width="161" height="172" media="(min-width: 1440px)" srcset="images/card-pro-chicken-500g-tablet@1x.png 1x, images/card-pro-chicken-500g-tablet@2x.png 2x">
                 <source type="image/png" width="161" height="172" media="(min-width: 768px)" srcset="images/card-pro-chicken-500g-tablet@1x.png 1x, images/card-pro-chicken-500g-tablet@2x.png 2x">
-                <img class="card__image" src="images/card-pro-chicken-500g-mobile@1x.png" srcset="images/card-pro-chicken-500g-mobile@2x.png 2x" width="84" height="100" alt="">
+                <img class="card__image" src="images/card-pro-chicken-500g-mobile@1x.png" srcset="images/card-pro-chicken-500g-mobile@2x.png 2x" width="68" height="86" alt="">
               </picture>
-              <h2 class="card__title">Cat Energy Pro 500 г</h2>
-              <table class="card__features">
-                <tr>
-                  <td>Масса</td>
-                  <td>500 г</td>
-                </tr>
-                <tr>
-                  <td>Вкус</td>
-                  <td>Курица</td>
-                </tr>
-                <tr>
-                  <td>Цена</td>
-                  <td>700 ₽</td>
-                </tr>
-              </table>
+              <div class="card__text-wrapper">
+                <h2 class="card__title">Cat Energy Pro 500 г</h2>
+                <table class="card__features">
+                  <tr>
+                    <td>Масса</td>
+                    <td>500 г</td>
+                  </tr>
+                  <tr>
+                    <td>Вкус</td>
+                    <td>Курица</td>
+                  </tr>
+                  <tr>
+                    <td>Цена</td>
+                    <td>700 ₽</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <a class="card__button button" href="#">Заказать</a>
           </li>
@@ -90,23 +92,25 @@
                 <source type="image/webp" width="84" height="100" srcset="images/card-pro-chicken-1000g-mobile@1x.webp 1x, images/card-pro-chicken-1000g-mobile@2x.webp 2x">
                 <source type="image/png" width="172" height="196" media="(min-width: 1440px)" srcset="images/card-pro-chicken-1000g-desktop@1x.png 1x, images/card-pro-chicken-1000g-desktop@2x.png 2x">
                 <source type="image/png" width="168" height="206" media="(min-width: 768px)" srcset="images/card-pro-chicken-1000g-tablet@1x.png 1x, images/card-pro-chicken-1000g-tablet@2x.png 2x">
-                <img class="card__image" src="images/card-pro-chicken-1000g-mobile@1x.png" srcset="images/card-pro-chicken-1000g-mobile@2x.png 2x" width="84" height="100" alt="">
+                <img class="card__image card__image--1000g" src="images/card-pro-chicken-1000g-mobile@1x.png" srcset="images/card-pro-chicken-1000g-mobile@2x.png 2x" width="84" height="100" alt="">
               </picture>
-              <h2 class="card__title">Cat Energy Pro 1000 г</h2>
-              <table class="card__features">
-                <tr>
-                  <td>Масса</td>
-                  <td>1000 г</td>
-                </tr>
-                <tr>
-                  <td>Вкус</td>
-                  <td>Курица</td>
-                </tr>
-                <tr>
-                  <td>Цена</td>
-                  <td>1000 ₽</td>
-                </tr>
-              </table>
+              <div class="card__text-wrapper">
+                <h2 class="card__title">Cat Energy Pro 1000 г</h2>
+                <table class="card__features">
+                  <tr>
+                    <td>Масса</td>
+                    <td>1000 г</td>
+                  </tr>
+                  <tr>
+                    <td>Вкус</td>
+                    <td>Курица</td>
+                  </tr>
+                  <tr>
+                    <td>Цена</td>
+                    <td>1000 ₽</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <a class="card__button button" href="#">Заказать</a>
           </li>
@@ -115,26 +119,28 @@
               <picture>
                 <source type="image/webp" width="163" height="174" media="(min-width: 1440px)" srcset="images/card-pro-fish-500g-tablet@1x.webp 1x, images/card-pro-fish-500g-tablet@2x.webp 2x">
                 <source type="image/webp" width="163" height="174" media="(min-width: 768px)" srcset="images/card-pro-fish-500g-tablet@1x.webp 1x, images/card-pro-fish-500g-tablet@2x.webp 2x">
-                <source type="image/webp" width="84" height="100" srcset="images/card-pro-fish-500g-mobile@1x.webp 1x, images/card-pro-fish-500g-mobile@2x.webp 2x">
+                <source type="image/webp" width="68" height="86" srcset="images/card-pro-fish-500g-mobile@1x.webp 1x, images/card-pro-fish-500g-mobile@2x.webp 2x">
                 <source type="image/png" width="163" height="174" media="(min-width: 1440px)" srcset="images/card-pro-fish-500g-tablet@1x.png 1x, images/card-pro-fish-500g-tablet@2x.png 2x">
                 <source type="image/png" width="163" height="174" media="(min-width: 768px)" srcset="images/card-pro-fish-500g-tablet@1x.png 1x, images/card-pro-fish-500g-tablet@2x.png 2x">
-                <img class="card__image" src="images/card-pro-fish-500g-mobile@1x.png" srcset="images/card-pro-fish-500g-mobile@2x.png 2x" width="84" height="100" alt="">
+                <img class="card__image" src="images/card-pro-fish-500g-mobile@1x.png" srcset="images/card-pro-fish-500g-mobile@2x.png 2x" width="68" height="86" alt="">
               </picture>
-              <h2 class="card__title">Cat Energy Pro 500 г</h2>
-              <table class="card__features">
-                <tr>
-                  <td>Масса</td>
-                  <td>500 г</td>
-                </tr>
-                <tr>
-                  <td>Вкус</td>
-                  <td>Рыба</td>
-                </tr>
-                <tr>
-                  <td>Цена</td>
-                  <td>700 ₽</td>
-                </tr>
-              </table>
+              <div class="card__text-wrapper">
+                <h2 class="card__title">Cat Energy Pro 500 г</h2>
+                <table class="card__features">
+                  <tr>
+                    <td>Масса</td>
+                    <td>500 г</td>
+                  </tr>
+                  <tr>
+                    <td>Вкус</td>
+                    <td>Рыба</td>
+                  </tr>
+                  <tr>
+                    <td>Цена</td>
+                    <td>700 ₽</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <a class="card__button button" href="#">Заказать</a>
           </li>
@@ -146,23 +152,25 @@
                 <source type="image/webp" width="84" height="100" srcset="images/card-pro-fish-1000g-mobile@1x.webp 1x, images/card-pro-fish-1000g-mobile@2x.webp 2x">
                 <source type="image/png" width="172" height="196" media="(min-width: 1440px)" srcset="images/card-pro-fish-1000g-desktop@1x.png 1x, images/card-pro-fish-1000g-desktop@2x.png 2x">
                 <source type="image/png" width="168" height="200" media="(min-width: 768px)" srcset="images/card-pro-fish-1000g-tablet@1x.png 1x, images/card-pro-fish-1000g-tablet@2x.png 2x">
-                <img class="card__image" src="images/card-pro-fish-1000g-mobile@1x.png" srcset="images/card-pro-fish-1000g-mobile@2x.png 2x" width="84" height="100" alt="">
+                <img class="card__image card__image--1000g" src="images/card-pro-fish-1000g-mobile@1x.png" srcset="images/card-pro-fish-1000g-mobile@2x.png 2x" width="84" height="100" alt="">
               </picture>
-              <h2 class="card__title">Cat Energy Pro 1000 г</h2>
-              <table class="card__features">
-                <tr>
-                  <td>Масса</td>
-                  <td>1000 г</td>
-                </tr>
-                <tr>
-                  <td>Вкус</td>
-                  <td>Рыба</td>
-                </tr>
-                <tr>
-                  <td>Цена</td>
-                  <td>1000 ₽</td>
-                </tr>
-              </table>
+              <div class="card__text-wrapper">
+                <h2 class="card__title">Cat Energy Pro 1000 г</h2>
+                <table class="card__features">
+                  <tr>
+                    <td>Масса</td>
+                    <td>1000 г</td>
+                  </tr>
+                  <tr>
+                    <td>Вкус</td>
+                    <td>Рыба</td>
+                  </tr>
+                  <tr>
+                    <td>Цена</td>
+                    <td>1000 ₽</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <a class="card__button button" href="#">Заказать</a>
           </li>
@@ -171,26 +179,28 @@
               <picture>
                 <source type="image/webp" width="161" height="171" media="(min-width: 1440px)" srcset="images/card-slim-buckwheat-500g-tablet@1x.webp 1x, images/card-slim-buckwheat-500g-tablet@2x.webp 2x">
                 <source type="image/webp" width="161" height="171" media="(min-width: 768px)" srcset="images/card-slim-buckwheat-500g-tablet@1x.webp 1x, images/card-slim-buckwheat-500g-tablet@2x.webp 2x">
-                <source type="image/png" width="84" height="100" srcset="images/card-slim-buckwheat-500g-mobile@1x.webp 1x, images/card-slim-buckwheat-500g-mobile@2x.webp 2x">
+                <source type="image/png" width="68" height="86" srcset="images/card-slim-buckwheat-500g-mobile@1x.webp 1x, images/card-slim-buckwheat-500g-mobile@2x.webp 2x">
                 <source type="image/png" width="161" height="171" media="(min-width: 1440px)" srcset="images/card-slim-buckwheat-500g-tablet@1x.png 1x, images/card-slim-buckwheat-500g-tablet@2x.png 2x">
                 <source type="image/png" width="161" height="171" media="(min-width: 768px)" srcset="images/card-slim-buckwheat-500g-tablet@1x.png 1x, images/card-slim-buckwheat-500g-tablet@2x.png 2x">
-                <img class="card__image" src="images/card-slim-buckwheat-500g-mobile@1x.png" srcset="images/card-slim-buckwheat-500g-mobile@2x.png 2x" width="84" height="100" alt="">
+                <img class="card__image" src="images/card-slim-buckwheat-500g-mobile@1x.png" srcset="images/card-slim-buckwheat-500g-mobile@2x.png 2x" width="68" height="86" alt="">
               </picture>
-              <h2 class="card__title">Cat Energy Slim 500 г</h2>
-              <table class="card__features">
-                <tr>
-                  <td>Масса</td>
-                  <td>500 г</td>
-                </tr>
-                <tr>
-                  <td>Вкус</td>
-                  <td>Гречка</td>
-                </tr>
-                <tr>
-                  <td>Цена</td>
-                  <td>400 ₽</td>
-                </tr>
-              </table>
+              <div class="card__text-wrapper">
+                <h2 class="card__title">Cat Energy Slim 500 г</h2>
+                <table class="card__features">
+                  <tr>
+                    <td>Масса</td>
+                    <td>500 г</td>
+                  </tr>
+                  <tr>
+                    <td>Вкус</td>
+                    <td>Гречка</td>
+                  </tr>
+                  <tr>
+                    <td>Цена</td>
+                    <td>400 ₽</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <a class="card__button button" href="#">Заказать</a>
           </li>
@@ -202,23 +212,25 @@
                 <source type="image/webp" width="84" height="100" srcset="images/card-slim-buckwheat-1000g-mobile@1x.webp 1x, images/card-slim-buckwheat-1000g-mobile@2x.webp 2x">
                 <source type="image/png" width="172" height="196" media="(min-width: 1440px)" srcset="images/card-slim-buckwheat-1000g-desktop@1x.png 1x, images/card-slim-buckwheat-1000g-desktop@2x.png 2x">
                 <source type="image/png" width="168" height="200" media="(min-width: 768px)" srcset="images/card-slim-buckwheat-1000g-tablet@1x.png 1x, images/card-slim-buckwheat-1000g-tablet@2x.png 2x">
-                <img class="card__image" src="images/card-slim-buckwheat-1000g-mobile@1x.png" srcset="images/card-slim-buckwheat-1000g-mobile@2x.png 2x" width="84" height="100" alt="">
+                <img class="card__image card__image--1000g" src="images/card-slim-buckwheat-1000g-mobile@1x.png" srcset="images/card-slim-buckwheat-1000g-mobile@2x.png 2x" width="84" height="100" alt="">
               </picture>
-              <h2 class="card__title">Cat Energy Slim 1000 г</h2>
-              <table class="card__features">
-                <tr>
-                  <td>Масса</td>
-                  <td>1000 г</td>
-                </tr>
-                <tr>
-                  <td>Вкус</td>
-                  <td>Гречка</td>
-                </tr>
-                <tr>
-                  <td>Цена</td>
-                  <td>700 ₽</td>
-                </tr>
-              </table>
+              <div class="card__text-wrapper">
+                <h2 class="card__title">Cat Energy Slim 1000 г</h2>
+                <table class="card__features">
+                  <tr>
+                    <td>Масса</td>
+                    <td>1000 г</td>
+                  </tr>
+                  <tr>
+                    <td>Вкус</td>
+                    <td>Гречка</td>
+                  </tr>
+                  <tr>
+                    <td>Цена</td>
+                    <td>700 ₽</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <a class="card__button button" href="#">Заказать</a>
           </li>
@@ -227,30 +239,32 @@
               <picture>
                 <source type="image/webp" width="163" height="174" media="(min-width: 1440px)" srcset="images/card-slim-rice-500g-tablet@1x.webp 1x, images/card-slim-rice-500g-tablet@2x.webp 2x">
                 <source type="image/webp" width="163" height="174" media="(min-width: 768px)" srcset="images/card-slim-rice-500g-tablet@1x.webp 1x, images/card-slim-rice-500g-tablet@2x.webp 2x">
-                <source type="image/webp" width="84" height="100" srcset="images/card-slim-rice-500g-mobile@1x.webp 1x, images/card-slim-rice-500g-mobile@2x.webp 2x">
+                <source type="image/webp" width="68" height="86" srcset="images/card-slim-rice-500g-mobile@1x.webp 1x, images/card-slim-rice-500g-mobile@2x.webp 2x">
                 <source type="image/png" width="163" height="174" media="(min-width: 1440px)" srcset="images/card-slim-rice-500g-tablet@1x.png 1x, images/card-slim-rice-500g-tablet@2x.png 2x">
                 <source type="image/png" width="163" height="174" media="(min-width: 768px)" srcset="images/card-slim-rice-500g-tablet@1x.png 1x, images/card-slim-rice-500g-tablet@2x.png 2x">
-                <img class="card__image" src="images/card-slim-rice-500g-mobile@1x.png" srcset="images/card-slim-rice-500g-mobile@2x.png 2x" width="84" height="100" alt="">
+                <img class="card__image" src="images/card-slim-rice-500g-mobile@1x.png" srcset="images/card-slim-rice-500g-mobile@2x.png 2x" width="68" height="86" alt="">
               </picture>
-              <h2 class="card__title">Cat Energy Slim 500 г</h2>
-              <table class="card__features">
-                <tr>
-                  <td>Масса</td>
-                  <td>500 г</td>
-                </tr>
-                <tr>
-                  <td>Вкус</td>
-                  <td>Рис</td>
-                </tr>
-                <tr>
-                  <td>Цена</td>
-                  <td>500 ₽</td>
-                </tr>
-              </table>
+              <div class="card__text-wrapper">
+                <h2 class="card__title">Cat Energy Slim 500 г</h2>
+                <table class="card__features">
+                  <tr>
+                    <td>Масса</td>
+                    <td>500 г</td>
+                  </tr>
+                  <tr>
+                    <td>Вкус</td>
+                    <td>Рис</td>
+                  </tr>
+                  <tr>
+                    <td>Цена</td>
+                    <td>500 ₽</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <a class="card__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog__item card-more">
+          <li class="catalog__item catalog__item--more card-more">
             <h2 class="card-more__title">Показать еще 100500 товаров</h2>
             <span class="card-more__description">На самом деле вкусов гораздо больше!</span>
             <a class="card-more__button button button--more" href="#">Показать все</a>
@@ -308,13 +322,13 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts contacts--nojs">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__container container address address--catalog">
         <p class="address__collab">Приглашаем к сотрудничеству дилеров!</p>
         <div class="address__container">
           <span class="address__text">ул. Большая Конюшенная, д. 19/8</span>
-          <span class="address__text">Санкт-Петербург</span>
+          <span class="address__text address__text--town">Санкт-Петербург</span>
         </div>
       </div>
       <div class="contacts__address map">
@@ -327,6 +341,7 @@
           <img class="map__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта">
         </picture>
       </div>
+      <iframe class="contacts__interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5893.2248049246655!2d30.32141831503415!3d59.93722684952904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1734552614368!5m2!1sru!2sby" width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта"></iframe>
     </section>
 
   </main>
@@ -334,7 +349,7 @@
   <footer class="main-footer">
     <div class="container main-footer__container">
       <a class="main-footer__logo" href="index.html">
-        <img src="images/logo-text.svg" width="128" height="24" alt="Cat Energy Text">
+        <img class="main-footer__image" src="images/logo-text.svg" width="128" height="24" alt="Cat Energy Text">
       </a>
       <div class="main-footer__social social">
         <ul class="social__list">
