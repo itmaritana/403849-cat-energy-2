@@ -11,6 +11,11 @@
 .detail__description {
   color: $basic-text-color;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .detail__image {
@@ -21,4 +26,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 80px;
+    max-width: 80px;
+    height: 80px;
+  }
 }

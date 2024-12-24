@@ -1,3 +1,15 @@
+.programs {
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 55px;
+  }
+}
+
 .programs__list {
   @include clear-list;
   display: flex;

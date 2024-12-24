@@ -1,7 +1,36 @@
 .card-more {
+  position: relative;
   background-image: url("../../icons/stack.svg#show-more");
+  background-position: 50% 25px;
   background-repeat: no-repeat;
   background-size: 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50px;
+      width: 2px;
+      height: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #d3d3d3;
+    }
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #d3d3d3;
+    }
+  }
 }
 
 .card-more__title {
@@ -12,17 +41,20 @@
   text-align: center;
   color: #111111;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .card-more__description {
+  display: block;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   color: $basic-text-color;
+  margin-bottom: 21px;
 }
 
 .card-more__button {
   display: block;
   width: 100%;
-  margin-bottom: 25px;
 }

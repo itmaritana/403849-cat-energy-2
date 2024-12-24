@@ -12,3 +12,8 @@ navToggle.addEventListener('click', () => {
     navToggle.classList.remove('main-nav__toggle--close');
   }
 });
+
+
+const contacts = document.querySelector('.contacts');
+
+contacts.classList.remove('contacts--nojs');

@@ -5,21 +5,82 @@
   line-height: 20px;
   color: $secondary-title-color;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 14px;
+  width: 60%;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .card__features {
+  width: 100%;
   font-size: 12px;
   line-height: 16px;
   color: $basic-text-color;
+  border: none;
+  border-collapse: collapse;
+
+  td:last-child {
+    text-align: right;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+
+    tr {
+      border-bottom: 1px solid #cdcdcd;
+    }
+
+    td {
+      padding-top: 7px;
+      padding-bottom: 4px;
+    }
+  }
 }
 
 .card__container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
 }
 
 .card__button {
   display: block;
-  width: 280px;
-  margin-bottom: 25px;
+  width: 100%;
+}
+
+.card__image {
+  display: block;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -52px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.card__image--1000g {
+  @media (min-width: $tablet-width) {
+    top: -70px;
+  }
+}
+
+.card__text-wrapper {
+  width: 100%;
 }
