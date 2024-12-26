@@ -2,6 +2,43 @@
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
   color: $basic-title-color;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100vw;
+    height: 2px;
+    background-color: $basic-bg-color;
+  }
+
+  & span {
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 40px;
+    margin-left: -20px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 40px;
+      margin-left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: -40px;
+    }
+  }
 }

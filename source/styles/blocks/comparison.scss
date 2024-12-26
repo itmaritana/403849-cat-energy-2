@@ -53,6 +53,14 @@
   margin: 0 auto;
 }
 
+.comparison__image--before {
+  clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+}
+
 .comparison__image--after {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
 }

@@ -3,7 +3,7 @@
   padding: 21px 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 63px 31px 53px;
+    padding: 77px 63px 35px 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,7 +16,7 @@
   padding: 24px 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 29px 31px 53px;
+    padding: 77px 29px 34px 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,7 +29,7 @@
     position: absolute;
     width: 200px;
     height: 211px;
-    top: 0;
+    top: 2px;
     right: 0;
   }
 
@@ -43,6 +43,8 @@
   @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
     width: 268px;
     height: 200px;
+    top: 13px;
+    right: -5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,7 +71,7 @@
 .program__description {
   color: $basic-text-color;
   margin: 0;
-  padding-bottom: 23px;
+  padding-bottom: 35px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
@@ -91,6 +93,10 @@
   margin-bottom: 22px;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+
   @media (min-width: $desktop-width) {
     gap: 62px;
     margin-bottom: 39px;
@@ -100,6 +106,10 @@
 .program__title-wrapper--pro {
   gap: 11px;
   margin-left: -7px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 
   @media (min-width: $desktop-width) {
     gap: 47px;

@@ -1,14 +1,44 @@
 .special-offer {
   background-color: $basic-bg-color;
+  background-image: url("../../images/special-offer-background-mobile@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 59px;
+  padding-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 57px 125px 60px 77px;
+    align-items: center;
+    background-image: url("../../images/special-offer-background-tablet@2x.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/special-offer-background-desktop@2x.png");
+    display: block;
+    padding: 56px 42px 43px;
+  }
 
   &::before {
     content: "";
     display: block;
+    margin: 0 auto;
+    margin-bottom: 48px;
     width: 78px;
     height: 80px;
     background-image: url("../../icons/stack.svg#special-offer-icon");
     background-size: 78px 80px;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 auto;
+      margin-bottom: 46px;
+    }
   }
 }
 
@@ -17,8 +47,16 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+  margin: 0 auto;
+  width: 60%;
 
   @media (min-width: $tablet-width) {
     width: 161px;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
