@@ -1,5 +1,4 @@
 .catalog {
-  padding-top: 20px;
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
@@ -18,7 +17,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 1;
     margin-bottom: 84px;
   }
 }
@@ -34,7 +32,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 80px;
+    gap: 144px 80px;
   }
 }
 
@@ -73,7 +71,9 @@
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
     border: 2px solid $secondary-bg-color;
-    padding-top: 150px;
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
   }
 }
 

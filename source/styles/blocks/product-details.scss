@@ -2,7 +2,7 @@
   padding-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 114px;
+    padding-bottom: 104px;
     border-bottom: 1px solid #e6e6e6;
   }
 
@@ -38,10 +38,10 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    flex-flow: row wrap;
-    gap: 132px 0;
-    justify-content: space-between;
-    padding-right: 79px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 133px 58px;
+    // padding-right: 79px;
     counter-reset: list-number 0;
   }
 

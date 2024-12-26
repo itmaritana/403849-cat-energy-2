@@ -6,6 +6,14 @@
   }
 }
 
+.contacts--catalog {
+  background-color: $secondary-bg-color;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
 .contacts--nojs {
   .contacts__address {
     display: block;

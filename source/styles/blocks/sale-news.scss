@@ -1,16 +1,48 @@
-.sale-news__title {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  color: $basic-title-color;
-}
-
 .sale-news__description {
+  display: block;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   color: $basic-title-color;
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+    width: 80%;
+  }
+}
+
+.sale-news__title {
+  margin: 0;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    margin-bottom: 72px;
+  }
+}
+
+.sale-news__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 96px;
+    padding-bottom: 104px;
+  }
 }

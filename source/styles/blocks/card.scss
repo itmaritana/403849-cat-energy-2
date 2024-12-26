@@ -16,12 +16,16 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 75%;
+  }
 }
 
 .card__features {
   width: 100%;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 15px;
   color: $basic-text-color;
   border: none;
   border-collapse: collapse;
@@ -49,7 +53,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     display: flex;
