@@ -8,6 +8,7 @@
 
   @media (min-width: $desktop-width) {
     border: none;
+    padding-bottom: 127px;
   }
 }
 
@@ -27,7 +28,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 83px;
+    margin-bottom: 71px;
   }
 }
 
@@ -41,12 +42,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 133px 58px;
-    // padding-right: 79px;
     counter-reset: list-number 0;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-right: 0;
+    column-gap: 76px;
   }
 }
 
@@ -87,6 +89,7 @@
 
     @media (min-width: $desktop-width) {
       width: 248px;
+      padding-left: 3px;
     }
   }
 
@@ -97,6 +100,19 @@
 
     @media (min-width: $desktop-width) {
       width: 250px;
+      padding-left: 3px;
     }
+  }
+}
+
+.product-details__item--benefit::after {
+  @media (min-width: $tablet-width) {
+    right: 5px;
+  }
+}
+
+.product-details__item--instruction::after {
+  @media (min-width: $tablet-width) {
+    right: -5px;
   }
 }
