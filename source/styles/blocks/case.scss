@@ -63,7 +63,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 440px;
+    width: 432px;
     margin-bottom: 70px;
   }
 }
@@ -103,7 +103,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    gap: 63px;
+    gap: 65px;
   }
 }
 
@@ -111,7 +111,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 103px;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,14 +125,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 60px;
-  }
-}
-
-.case__presentation-wrapper {
-  padding-bottom: 20px;
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 0;
   }
 }
 
