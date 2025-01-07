@@ -70,15 +70,17 @@
 
 .hero__button {
   display: block;
-  font-size: 20px;
-  line-height: 26px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
     width: 242px;
     position: relative;
     z-index: 2;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,8 +89,13 @@
 }
 
 .hero__slogan-container {
-  padding-top: 62px;
-  margin-bottom: 50px;
+  padding-top: 27px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    margin-bottom: 50px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 57px;

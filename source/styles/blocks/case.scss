@@ -130,4 +130,9 @@
 
 .case__comparison {
   align-self: flex-start;
+  margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
