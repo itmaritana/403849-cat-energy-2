@@ -34,4 +34,16 @@
       opacity: 0.3;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.copyright__text {
+  width: 75%;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
 }

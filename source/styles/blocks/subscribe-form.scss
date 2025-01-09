@@ -22,6 +22,10 @@
   &::placeholder {
     color: $basic-text-color;
   }
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+  }
 }
 
 .subscribe-form__button {

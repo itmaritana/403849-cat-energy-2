@@ -26,8 +26,9 @@
     background-color: $basic-bg-color;
   }
 
-  & span {
+  span {
     background-color: #ffffff;
+    display: inline-block;
     padding-left: 20px;
     padding-right: 40px;
     margin-left: -20px;

@@ -3,7 +3,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px 33px;
     width: 436px;
   }
 
@@ -35,8 +36,7 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 1.33;
-    padding-top: 14px;
-    padding-bottom: 12px;
+    padding: 14px 0 12px;
   }
 
   @media (min-width: $desktop-width) {
