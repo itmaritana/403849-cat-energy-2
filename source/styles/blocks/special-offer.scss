@@ -1,33 +1,56 @@
 .special-offer {
   background-color: $basic-bg-color;
+<<<<<<< HEAD
   background-image: url("../../images/special-offer-background-mobile@1x.png");
+=======
+  background-image: url("../../images/special-offer-background-mobile@1x.jpg");
+>>>>>>> module7-task1
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 59px;
   padding-bottom: 43px;
 
   @include retina {
+<<<<<<< HEAD
     background-image: url("../../images/special-offer-background-mobile@2x.png");
+=======
+    background-image: url("../../images/special-offer-background-mobile@2x.jpg");
+>>>>>>> module7-task1
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
     padding: 57px 125px 60px 77px;
     align-items: center;
+<<<<<<< HEAD
     background-image: url("../../images/special-offer-background-tablet@1x.png");
 
     @include retina {
       background-image: url("../../images/special-offer-background-tablet@2x.png");
+=======
+    background-image: url("../../images/special-offer-background-tablet@1x.jpg");
+
+    @include retina {
+      background-image: url("../../images/special-offer-background-tablet@2x.jpg");
+>>>>>>> module7-task1
     }
   }
 
   @media (min-width: $desktop-width) {
+<<<<<<< HEAD
     background-image: url("../../images/special-offer-background-desktop@1x.png");
+=======
+    background-image: url("../../images/special-offer-background-desktop@1x.jpg");
+>>>>>>> module7-task1
     display: block;
     padding: 56px 42px 43px;
 
     @include retina {
+<<<<<<< HEAD
       background-image: url("../../images/special-offer-background-desktop@2x.png");
+=======
+      background-image: url("../../images/special-offer-background-desktop@2x.jpg");
+>>>>>>> module7-task1
     }
   }
 

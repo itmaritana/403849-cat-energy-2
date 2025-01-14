@@ -9,6 +9,10 @@
 }
 
 .main-header--catalog {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+
   &::before {
     display: none;
   }
