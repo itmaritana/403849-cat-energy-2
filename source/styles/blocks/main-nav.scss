@@ -37,6 +37,8 @@
 }
 
 .main-nav__list {
+  z-index: 2;
+
   @media (max-width: calc($tablet-width - 1px)) {
     position: absolute;
     background-color: #ffffff;
