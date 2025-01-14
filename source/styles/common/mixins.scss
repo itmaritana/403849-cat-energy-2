@@ -27,3 +27,9 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin retina {
+  @media (min-resolution: 2dppx) {
+    @content;
+  }
+}
