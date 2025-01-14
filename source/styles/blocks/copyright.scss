@@ -20,8 +20,6 @@
 
   &:hover,
   &:focus {
-    color: $basic-bg-color;
-
     &::after {
       background-color: $basic-bg-color;
     }
@@ -31,6 +29,7 @@
     opacity: 0.3;
 
     &::after {
+      background-color: $basic-bg-color;
       opacity: 0.3;
     }
   }
